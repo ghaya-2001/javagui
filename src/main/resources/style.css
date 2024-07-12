@@ -1,0 +1,19 @@
+.primary-background {
+    -fx-background-color: #f8fb1e;
+}
+
+.secondary-background {
+    -fx-background-color: #fadfa4;
+}
+
+.third-background {
+    -fx-background-color: #FF9C07;
+}
+
+.selected-sauce-background-btn {
+    -fx-background-color: #A4FF6DFF;
+}
+
+.sidebar {
+    -fx-background-color: #FF9C07;
+}

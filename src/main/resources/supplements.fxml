@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="544.0" prefWidth="577.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Connexion1ALINF7.controllers.SupplementsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="728.0" prefWidth="891.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="502.0" prefWidth="178.0" styleClass="third-background" stylesheets="style.css">
+               <children>
+                  <VBox alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="118.0" prefWidth="128.0">
+                     <children>
+                        <ImageView fx:id="avatarImageView" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@generic-avatar.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="updatePicBtn" mnemonicParsing="false" onAction="#onPicUpdate" text="Update Pic" />
+                     </children>
+                  </VBox>
+                  <Label layoutX="25.0" layoutY="164.0" prefHeight="38.0" prefWidth="107.0" text="Hello Dear Customer  ">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="251.0" text=" Food is about identity">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="268.0" text=" choose your food ">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="15.0" layoutY="286.0" stylesheets="@style.css" text="The way you want... ">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="GoBackButton" layoutX="49.0" layoutY="475.0" mnemonicParsing="false" onAction="#GobackButton" prefHeight="37.0" prefWidth="102.0" styleClass="primary-background" stylesheets="@style.css" text="Go Back " AnchorPane.leftAnchor="49.0" AnchorPane.topAnchor="475.0" >
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="secondary-background" stylesheets="style.css">
+               <children>
+                  <GridPane layoutY="104.0" prefHeight="231.0" prefWidth="362.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sauces/sauce-1.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sauce2BTn" alignment="CENTER" mnemonicParsing="false" onAction="#sauce2BTnAction" prefHeight="26.0" prefWidth="52.0" styleClass="primary-background" stylesheets="style.css" text="Add" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" GridPane.columnIndex="2">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sauces/sauce6.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sauce3BTn" alignment="CENTER" mnemonicParsing="false" onAction="#sauce3BTnAction" prefHeight="26.0" prefWidth="52.0" styleClass="primary-background" stylesheets="style.css" text="Add" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sauces/sauce3.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sauce1BTn" alignment="CENTER" mnemonicParsing="false" onAction="#sauce1BTnAction" prefHeight="26.0" prefWidth="52.0" styleClass="primary-background" stylesheets="style.css" text="Add" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sauces/sauce4.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sauce5BTn" alignment="CENTER" mnemonicParsing="false" onAction="#sauce5BTnAction" prefHeight="26.0" prefWidth="52.0" styleClass="primary-background" stylesheets="style.css" text="Add" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sauces/sauce2.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sauce6BTn" alignment="CENTER" mnemonicParsing="false" onAction="#sauce6BTnAction" prefHeight="26.0" prefWidth="52.0" styleClass="primary-background" stylesheets="style.css" text="Add" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" GridPane.rowIndex="1">
+                           <children>
+                              <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sauces/sauce5.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="sauce4BTn" alignment="CENTER" mnemonicParsing="false" onAction="#sauce4BTnAction" prefHeight="26.0" prefWidth="52.0" styleClass="primary-background" stylesheets="style.css" text="Add" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="confirmBtn" layoutX="241.0" layoutY="457.0" mnemonicParsing="false" onAction="#onConfirmAction" prefHeight="30.0" prefWidth="107.0" styleClass="primary-background" stylesheets="style.css" text="Confirm" textAlignment="RIGHT">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="30.0" layoutY="32.0" prefHeight="30.0" prefWidth="273.0" text="Supplement Sauce :" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="44.0" layoutY="360.0" text="Feel free to add anything ... ">
+                     <font>
+                        <Font name="System Italic" size="10.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="txttext" layoutX="41.0" layoutY="385.0" prefHeight="56.0" prefWidth="312.0" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</VBox>
